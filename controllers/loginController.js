@@ -35,7 +35,7 @@ exports.postLogin = async (req, res) => {
         console.log('Decrypted password:', cryptedPassword);
         console.log('Stored password:', encryptedPassword);
         if (cryptedPassword === encryptedPassword) {
-          res.render('home');
+          res.redirect("/"); // Redirect to the home page or any desired location);
         } else {
           res.render('login', { errorMessage: 'Incorrect Password!' });
         }
