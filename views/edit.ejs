@@ -4,7 +4,6 @@
 <html>
     <head>
         <title>Illumiel</title>
-        <link rel="stylesheet" href="style.css">
 
         <style>
             body {
@@ -94,8 +93,8 @@
                 background-image: linear-gradient(rgba(82, 66, 66, 0.75),rgba(137, 124, 124, 0.75)), url('https://mcdn.wallpapersafari.com/medium/69/47/hBNq5V.png');
             }
 
-            #form {
-                background-image: linear-gradient(rgba(105, 95, 95, 0.75),rgba(75, 70, 70, 0.75)), url('https://mcdn.wallpapersafari.com/medium/41/70/Se6L4T.jpg');
+            #Form {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url('https://www.allrecipes.com/thmb/gk1cHP21-syS3M_dz1cr6DWxhfE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1165807395-2000-28ea3eaf72f34ddaa97d9a54ca0c6025.jpg');
             }
 
             #contact {
@@ -135,10 +134,14 @@
             }
 
             .container {
+                margin-left: -16%;
+                width: 130%;
                 border-radius: 5px;
                 background-color: rgba(255, 255, 255, 0.5);
                 backdrop-filter: blur(5px);
                 padding: 20px;
+                column-count: 3;
+                column-gap: 20px;
             }
 
             .error {
@@ -151,7 +154,7 @@
 
     <body>
         <header>
-            <img src="https://www.talkesport.com/wp-content/uploads/image-570.png" class="profile-img">
+          
             <nav>
                 <ul>
                   <div class="action-link-wrap">
@@ -164,20 +167,11 @@
             </nav>
         </header>
         <main>
-            <section id="hero">
-                <div class="section-inner">
-                    <img src="https://www.talkesport.com/wp-content/uploads/image-570.png" class="profile-img">
-                    <h1>Illumiel</h1>
-                </div>
-            </section>
-            <section id="about">
-                
-            </section>
-
-            <section id="form">
+         
+            <section id="Form">
         
-                    <form id="registration-form" action="/edit/<%= data.id %>" method="POST">
-                        <div class="container">
+                <form id="registration-form" action="/home" method="POST">
+                    <div class="container">
 
                             <h1>Edit Form</h1>
 
@@ -227,20 +221,8 @@
                 
             </section>
 
-            <section id="contact">
-                <div class="section-inner">
-                    <h2>Contact me</h2>
-                    <p>You can find me on:</p>
-                    <ul>
-                        <li><a href="https://twitter.com/cbl_mrlnnn">Twitter</a></li>
-                        <li><a href="https://www.facebook.com/Oppapa.mo.Goblin">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/mrln_cbl/">Instagram</a></li>
-                    </ul>
-                </div>
-            </section>
+            
         </main>
-        <footer>
-            <h3>© Copyright Illumiii69</h3>
-        </footer>
+      
     </body>
 </html>
